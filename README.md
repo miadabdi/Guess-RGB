@@ -2,7 +2,7 @@
 
 This is a game. I has got to levels. Easy and hard.
 
-You are shown 6 colors in Hard and 3 colors in Easy mode. You should guess the color that mathes the rgb color that text has been shown to you.
+You are shown 6 colors in Hard and 3 colors in Easy mode. You should guess the color that mathes the rgb color text that has been shown to you.
 
 # Usage
 
