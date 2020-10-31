@@ -1,0 +1,56 @@
+.header {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 1rem 0;
+    transition: background-color .2s;
+    .name {
+        font-size: 3rem;
+    }
+    .rgb-target {
+        font-size: 5rem;
+        margin: -1rem 0;
+    }
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+}
+
+.ctrl {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    .message {
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: black;
+    }
+    button {
+        height: 100%;
+        border: none;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: .4rem .6rem;
+        background-color: transparent;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        transition: all .2s;
+        outline: none;
+        &.dificulity__level--selected,
+        &:hover {
+            background-color: var(--color-primary);
+            color: white;
+        }
+    }
+}

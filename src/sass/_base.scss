@@ -1,0 +1,23 @@
+*:root {
+    --color-primary: #3B76AD;
+    --color-back: #232323;
+    --color-border: #909090;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 10px
+}
+
+body {
+    line-height: 1.6;
+    font-family: sans-serif;
+    background-color: var(--color-back);
+}

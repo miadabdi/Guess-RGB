@@ -1,0 +1,126 @@
+*:root {
+    --color-primary: #3B76AD;
+    --color-back: #232323;
+    --color-border: #909090;
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation: fadeOutAnimation 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation: fadeInAnimation 1s;
+    animation-fill-mode: forwards;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.6;
+    font-family: sans-serif;
+    background-color: var(--color-back);
+}
+
+.header {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 1rem 0;
+}
+
+.header .name {
+    font-size: 3rem;
+}
+
+.header .rgb-target {
+    font-size: 5rem;
+    margin: -1rem 0;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+}
+
+.ctrl {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.ctrl .message {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: black;
+}
+
+.ctrl button {
+    height: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .4rem .6rem;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    transition: all .2s;
+}
+
+.ctrl button.dificulity__level--selected,
+.ctrl button:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.container-targets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem auto;
+    width: 48rem;
+    height: 32rem;
+}
+
+.container-targets .square {
+    border-radius: 3rem;
+    transition: background-color .2s;
+}

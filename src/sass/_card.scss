@@ -1,0 +1,13 @@
+.container-targets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem auto;
+    width: 48rem;
+    height: 32rem;
+    .square {
+        border-radius: 3rem;
+        transition: background-color .2s;
+    }
+}
